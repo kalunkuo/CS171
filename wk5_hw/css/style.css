@@ -1,0 +1,41 @@
+.chart{
+    stroke : rgba(210,112,112,1.0);
+    stroke-width : 1.5;
+    fill: rgba(210,112,112,0.3);
+}
+
+.label{
+    font-size: x-small;
+    color: rosybrown;
+}
+
+
+.subtitle{
+    display: block;
+    text-align: center;
+}
+
+.row{
+    background: rgba(154,140,152,0.2);
+}
+
+.label{
+    background: rgba(154,140,152,0.2);
+}
+
+#chart-area-pop{
+
+}
+
+
+.tooltip_text_date{
+    fill:rgba(210,112,112,1.0);
+    font-size: x-small;
+}
+
+.tooltip_text{
+    fill:rgba(210,112,112,1.0);
+    font-size: large;
+    font-weight: bold;
+
+}

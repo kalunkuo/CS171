@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW 5</title>
+
+    <!-- CSS LIBRARIES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="./css/nouislider.css" rel="stylesheet">
+    <!-- YOUR CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>FIFA World Cup<sup>TM</sup></h1>
+    <h2>All Time Statistics</h2>
+
+    <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <form class="row g-3">
+                    <div class="col-auto">
+                        <div class="form-group">
+                            <select class="form-control" id="ranking-type" onchange="updateVisualization()">
+                                <option value="GOALS">Goals</option>
+                                <option value="AVERAGE_GOALS">Average Goals</option>
+                                <option value="MATCHES">Matches</option>
+                                <option value="TEAMS">Teams</option>
+                                <option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                    </div>
+                </form>
+            </div>
+            <div class="col-8">
+                <div id="slider" onchange="slider()"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+    <!-- Parent container for the visualization -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="chart-area" onchange="updateVisualization()"></div>
+            </div>
+            <div class="col">
+                <div id="info-box" onchange="updateVisualization()"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- embedding JS libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="./js/nouislider.js"></script>
+
+<!-- d3 -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+
+<!-- Your implementation -->
+<script src="js/main.js"></script>
+</body>
+</html>
