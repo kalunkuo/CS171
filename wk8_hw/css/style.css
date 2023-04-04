@@ -1,0 +1,59 @@
+
+/* ADD YOUR STYLES HERE */
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5vw;
+    margin-top: 20px;
+    text-align: center;
+    color: #314b85;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.5vw;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #314b85;
+}
+
+.title{
+    font-weight: 500;
+    fill: #314b85;
+}
+.y-axis{
+    color: #314b85;
+}
+.x-axis{
+    color: #314b85;
+}
+
+.chart{
+    background: rgba(65, 93, 154, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+.label{
+    font-size: small;
+    fill: rgba(65, 93, 154, 0.5);
+}
+
+.page{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.brush{
+
+}
+
+
+.bar{
+    fill: rgba(65, 93, 154, 0.5);
+}
+
+.area{
+    fill: rgba(65, 93, 154, 0.5);
+}
